@@ -46,6 +46,7 @@ textarea{
 	margin-top: 16px;
 	margin-left: 36px;
 	overflow: hidden;
+	font-size: 17px;
 
 }
 
@@ -53,23 +54,27 @@ button{
 	display: block;
 	float: right;
 	margin-right: 66px;
-	border-radius: 50px;
+	border-radius: 10px;
+	height: 40px;
+	border: none;
+	background-color: #00aced;
 
 }
 
 .timeL div{
 	border:2px solid blue;
 	border-radius: 20px;
-	width:90%;
+	width: 600px;
 	position: relative;
+	left: 635.8px;
     top: 210px;
 	margin-top: 10px;
-	word-wrap: break-word
+	word-wrap: break-word; /*para que el texto no se salga del div*/
+	font-size: 17px;
+	font-family:  'Indie Flower', cursive;
 }
 
-.tuit p{
 
-}
 
 
 #contar{
@@ -81,3 +86,4 @@ button{
 	background: transparent;
 	font-size: 15px;
 }
+

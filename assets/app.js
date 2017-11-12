@@ -26,25 +26,24 @@ window.onload=function(){
    }
 
  }
+  
   //funcion click
    sendButton.onclick=function(){ //onkeypress es un evento que hara algo cuando el boton en el html se aprete;
-   	if(twitInput.value === ""){          //primera condicion si no se ingresa nada el boton queda deshabilitado.
-   		sendButton.disabled=true;
-   	}else{
+      if(twitInput.value === ""){          //primera condicion si no se ingresa nada el boton queda deshabilitado.
+         sendButton.disabled=true;
+      }else{
 
-   		var tDiv= document.createElement('div');  //funcionamiento del twitter.
-   		var nSpan= document.createElement('span');
-   		var dSpan= document.createElement('span');
-   		var tParr= document.createElement('p');
+         var tDiv= document.createElement('div');  //funcionamiento del twitter.
+         var nSpan= document.createElement('span');
+         var tParr= document.createElement('p');
          tDiv.appendChild(nSpan);
-   		tDiv.appendChild(dSpan);
-   		tDiv.appendChild(tParr);
-   		tDiv.className="tuit";
-   		dSpan.textContent= new Date();
-   		tParr.textContent= twitInput.value;
+         tDiv.appendChild(tParr);
+         tDiv.className="tuit";
+         nSpan.textContent= "User ";
+         tParr.textContent= twitInput.value;
          timeLine.insertBefore(tDiv, timeLine.children[0]);
 
-   	}
+      }
 
 
    } 
