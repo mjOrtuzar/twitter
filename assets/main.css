@@ -57,17 +57,23 @@ button{
 
 }
 
-.timeL{
+.timeL div{
 	border:2px solid blue;
-	width: 600px;
+	border-radius: 20px;
+	width:90%;
 	position: relative;
-	left: 631.5px;
-	top: 200px;
+    top: 210px;
+	margin-top: 10px;
+	word-wrap: break-word
+}
+
+.tuit p{
+
 }
 
 
 #contar{
-	width: 20px;
+	width: 50px;
 	display: block;
 	margin-left: 36px;
 	color: #000;
